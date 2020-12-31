@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,                              KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_EQL,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NUM,  _______, _______, _______, _______, _______,                            _______, _______, _______, KC_LBRC, KC_RBRC, _______,
+     KC_NUM,  _______, _______, _______, _______, _______,                            _______, _______, _______, _______, _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      _______, _______, _______, _______, _______, _______,                            KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT,  _______, _______,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
@@ -106,3 +106,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   /* ) */
 
 };
+
+const uint16_t PROGMEM test_combo1[] = {KC_Y, KC_U, COMBO_END};
+const uint16_t PROGMEM test_combo2[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM test_combo3[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM test_combo4[] = {KC_O, KC_P, COMBO_END};
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(test_combo1, KC_LBRC),
+    COMBO(test_combo2, KC_RBRC),
+    COMBO(test_combo3, KC_0),
+    COMBO(test_combo4, KC_MINS)
+};
+
