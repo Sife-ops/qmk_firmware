@@ -107,14 +107,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 };
 
-const uint16_t PROGMEM test_combo1[] = {KC_Y, KC_U, COMBO_END};
-const uint16_t PROGMEM test_combo2[] = {KC_U, KC_I, COMBO_END};
-const uint16_t PROGMEM test_combo3[] = {KC_I, KC_O, COMBO_END};
-const uint16_t PROGMEM test_combo4[] = {KC_O, KC_P, COMBO_END};
+const uint16_t PROGMEM brackLeft[] = {KC_Y, KC_U, COMBO_END};
+const uint16_t PROGMEM brackRight[] = {KC_U, KC_I, COMBO_END};
+const uint16_t PROGMEM zero[] = {KC_I, KC_O, COMBO_END};
+const uint16_t PROGMEM dash[] = {KC_O, KC_P, COMBO_END};
 combo_t key_combos[COMBO_COUNT] = {
-    COMBO(test_combo1, KC_LBRC),
-    COMBO(test_combo2, KC_RBRC),
-    COMBO(test_combo3, KC_0),
-    COMBO(test_combo4, KC_MINS)
+    COMBO(brackLeft, KC_LBRC),
+    COMBO(brackRight, KC_RBRC),
+    COMBO(zero, KC_0),
+    COMBO(dash, KC_MINS)
 };
 
