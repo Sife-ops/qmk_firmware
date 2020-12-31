@@ -19,5 +19,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // #define USE_I2C
 #define EE_HANDS
-#define COMBO_COUNT 4
+#define COMBO_COUNT 5
 #define COMBO_TERM 50
+
+#define MK_3_SPEED
+#define MK_MOMENTARY_ACCEL
+#define MK_C_OFFSET_UNMOD 100
+#define MK_C_OFFSET_0 10
+#define MK_C_OFFSET_1 100
+#define MK_C_OFFSET_2 100
+#define MK_C_INTERVAL_UNMOD 200
+#define MK_C_INTERVAL_0 200
+#define MK_C_INTERVAL_1 100
+#define MK_C_INTERVAL_2 50
